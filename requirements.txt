@@ -1,0 +1,7 @@
+Django~=4.2
+numpy~=1.24.3
+Pillow~=8.4.0
+setuptools~=65.5.1
+playsound~=1.2.2
+tqdm~=4.65.0
+requests~=2.29.0

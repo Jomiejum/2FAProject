@@ -1,0 +1,258 @@
+{% load static %}
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>acceuil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+
+      <link rel="stylesheet" href="{% static 'st/css/animate.min' %}">
+      <link rel="stylesheet" href="{% static 'st/css/bootstrap.min' %}">
+      <link rel="stylesheet" href="{% static 'st/css/font-awesome.min' %}">
+      <link rel="stylesheet" href="{% static 'st/css/templatemo-style' %}">
+
+
+    <style type="text/css">
+
+
+
+p {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(63, 188, 80), rgb(215, 207, 207), rgb(138, 34, 218));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+    
+        @keyframes tipsy {
+      0 {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+      }
+      100% {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+      }
+    }
+        
+        
+        h5 {
+          color: #274b6c;
+          text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+          font-size:40px;
+          font-weight: bold;
+          text-decoration: none;
+          letter-spacing: -3px;
+          margin: 0;
+          position: absolute;
+         
+          left: 50%;
+          margin-bottom: 10%;
+         
+          transform: translateX(-50%) translateY(-50%);
+        }
+        
+        h5:before,
+        h5:after {
+          content: '';
+          padding: .9em .4em;
+          position: absolute;
+          left: 50%;
+          width: 100%;
+          top: 50%;
+          display: block;
+          border: 15px solid red;
+          transform: translateX(-50%) translateY(-50%) rotate(0deg);
+          animation: 10s infinite alternate ease-in-out tipsy;
+        }
+        
+        h5:before {
+          border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+          z-index: -1;
+        }
+        
+        h5:after {
+          border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+          box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+        }
+        </style> 
+    
+ 
+</head>
+<body  id="top" style="background-color: #cbcbf1;">
+    
+
+
+      <script>
+        window.setTimeout(function () {
+        location.href = "/vidCam";
+    }, 10000);  
+     </script>  
+
+     <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">SmartChais</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Acceuil</a></li>
+          <li  class="active"><a href="/login">Connexion</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+ 
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      
+        <div class="item active" style="background: linear-gradient(140deg, rgb(49, 27, 91) 0%, rgb(49, 27, 91) 0%, rgb(178, 66, 88) 65%, rgb(255, 157, 72) 100%, rgb(255, 157, 72) 100%);">
+            <p>Veuillez patienter pendant que nous vous redirigé  vers le page suivant</p>
+            <img  class="animate__animated animate__flipInY"data-wow-offset="50" data-wow-delay="1s" src="{% static 'st/ref.png' %}"  
+             style="width: 39.9%;margin-left: 50% ;"  >
+            <div class="carousel-caption">
+              <h4 style="font-size:20px" class="animate__animated animate__fadeInTopLeft"data-wow-offset="50" data-wow-delay="2s"><i>
+                La reconnaissance faciale est un algorithme logiciel utilisé pour vérifier ou identifier l’identité d’un individu via le traitement...
+              </i></h4>
+            </div>
+          </div>
+
+          <div class="item" style="background: linear-gradient(140deg, rgb(79, 0, 188) 0%, rgb(79, 0, 188) 0%, rgb(9, 171, 226) 100%, rgb(9, 171, 226) 100%);" >
+            <p>Veuillez patienter pendant que nous vous redirigé  vers le page suivant</p>
+            <img class="wow bounceIn"data-wow-offset="50" data-wow-delay="1s"   src="{% static 'st/rec.png' %}"  
+             style="width:33.67%;height:80%;margin-left: 55%">
+             <div class="carousel-caption">
+              <h4 style="font-size:20px" class="animate__animated animate__backInDown"data-wow-offset="50" data-wow-delay="2s"><i>
+                L’Internet of Things (IoT) décrit le réseau de terminaux physiques, les « objets », qui intègrent des capteurs, des softwares... 
+              </i></h4>
+            </div>
+          </div>
+
+      <!-- <div  class="item" style=" background: linear-gradient(150deg, rgb(8, 14, 123) 0%, rgb(8, 14, 123) 0%, rgb(60, 29, 168) 60%, rgb(162, 58, 255) 100%, rgb(162, 58, 255) 100%);">
+        <img class="animate__animated animate__backInLeft"data-wow-offset="50" data-wow-delay="1s" src="{% static 'st/iot2.png' %}"  
+         style="width:60.5%;margin-left: 55%">
+          <div class="carousel-caption">
+             <h3 style="font-family: cursive" class="animate__animated animate__bounceInLeft"data-wow-offset="50" data-wow-delay="2s">IOT_ISIMG</h3>
+          <p style="font-size:20px" class="animate__animated animate__backInLeft"data-wow-offset="50" data-wow-delay="2s"><i>Solutions Sur mesure</i></p>
+         </div>
+      </div> -->
+      
+      <div class="item" style="background: linear-gradient(140deg, rgb(49, 27, 91) 0%, rgb(49, 27, 91) 0%, rgb(178, 66, 88) 65%, rgb(255, 157, 72) 100%, rgb(255, 157, 72) 100%);">
+        <p>Veuillez patienter pendant que nous vous redirigé  vers le page suivant</p>
+        <img  class="animate__animated animate__flipInY"data-wow-offset="50" data-wow-delay="1s" src="{% static 'st/wj.png' %}"  
+         style="width: 41.48%;margin-left: 55%"  >
+        <div class="carousel-caption">
+          <h4 style="font-size:20px" class="animate__animated animate__fadeInTopLeft"data-wow-offset="50" data-wow-delay="2s"><i>
+            La reconnaissance faciale est appliquée dans plusieurs domaines dont ceux mentionnés plus haut.
+          </i></h4>
+        </div>
+      </div>
+ 
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span></span>
+      <span ></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span ></span>
+      <span ></span>
+    </a>
+  </div>
+</section>
+
+
+<div>
+
+
+
+
+
+</div>
+
+
+
+
+
+ 
+ 
+
+
+
+<!-- 
+ 
+      <section id="about" style="margin-top:25px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                 <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span><h5> SmartChais</h5></span></h2>
+                 
+              </div>
+                      <div  class="media-body" style="border-radius: 30PX">  </div>
+                    
+                     
+  
+   
+</div></div></section>
+ -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
