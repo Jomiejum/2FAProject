@@ -1,0 +1,100 @@
+
+
+{% extends 'admin.html' %}
+
+{% block content %}
+
+
+<h3>BIENVENUE {{user.username}} SUR NOTRE NOUVEAU SITE WEB</h3>
+
+ <!-- <script>
+    window.setTimeout(function () {
+    location.href = "http://myurl.com";
+}, 5000); 
+ </script> -->
+ 
+<table border="1px">
+    
+    <tr>
+        <td> </td>
+        {% if droit == False %}
+        <td><a href="https://www.gifsanimes.com/cat-fleches-111.htm"><img src="https://www.gifsanimes.com/data/media/111/fleche-image-animee-0176.gif" border="0" alt="fleche-image-animee-0176" /></a>
+        </td>
+        {% endif %}
+        <td> </td>  
+        
+    </tr>
+   
+  
+    <tr>
+        {% if droit == True %}
+        <td> <a href="https://www.gifsanimes.com/cat-fleches-111.htm"><img src="https://www.gifsanimes.com/data/media/111/fleche-image-animee-0175.gif" border="0" alt="fleche-image-animee-0175" /></a>
+        </td>
+        <td> <div class="tenor-gif-embed" data-postid="17413567" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/stop-stop-it-enough-please-stop-gif-17413567">Stop Stop It GIF</a>from <a href="https://tenor.com/search/stop-gifs">Stop GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script> </td>
+        <td><a href="https://www.gifsanimes.com/cat-fleches-111.htm"><img src="https://www.gifsanimes.com/data/media/111/fleche-image-animee-0174.gif" border="0" alt="fleche-image-animee-0174" /></a>
+        </td>
+
+        {% else %}
+        <td> ddddd </td>
+        <td>  ccccc</td>
+        <td>vvvv</td>
+        {% endif %}
+        
+    </tr>
+   
+    <tr>
+        <td> </td>
+        {% if droit == False %}
+        <td>  <a href="https://www.gifsanimes.com/cat-fleches-111.htm"><img src="https://www.gifsanimes.com/data/media/111/fleche-image-animee-0172.gif" border="0" alt="fleche-image-animee-0172" /></a>
+        </td>
+        {% endif %}
+        <td> </td>
+        
+    </tr>
+   
+
+</table>
+
+
+ 
+
+<BR>
+    <BR>
+<div class="form-group row">
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src=" https://blog.digitalcook.fr/wp-content/uploads/2021/06/The-facial-recognition.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">La reconnaissance faciale est un algorithme logiciel utilisé pour vérifier ou identifier l’identité d’un individu via le traitement... </p>
+                </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src=" https://media.istockphoto.com/id/946094534/fr/vectoriel/internet-des-objets-des-dispositifs-et-des-concepts-de-connectivit%C3%A9-sur-un-r%C3%A9seau-des.jpg?s=612x612&w=0&k=20&c=G9iVJjHLKzPcmIcBCj-7VCAdcgWpRV-b3PvpaRBtGEQ=" alt="Card image cap">
+
+                <div class="card-body">
+                <p class="card-text">La reconnaissance faciale (ou du visage) est une méthode d'identification biométrique d'un individu qui consiste à comparer les données d'une image numérique ou capturée en direct avec le dossier de la personne concernée. </p>
+                </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://www.telerama.fr/sites/tr_master/files/styles/simplecrop1000/public/30188201497_c72e2fd9ef_b_0.jpg?itok=E3rHD7pR" alt="Card image cap">
+                <div class="card-body">
+                <p class="card-text">La reconnaissance faciale est appliquée dans plusieurs domaines dont ceux mentionnés plus haut. </p>
+                </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+
+{% endblock %}
