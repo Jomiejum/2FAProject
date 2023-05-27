@@ -31,7 +31,7 @@ def bien(request):
 
 
 def pro(request):
-    return render(request, 'pro.html')
+    return render(request, 'dash.html')
 
 
 def acc(request):

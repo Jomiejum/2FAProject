@@ -31,7 +31,7 @@ def home(request):
 
 
 def pro(request):
-    return render(request, 'pro.html')
+    return render(request, 'dash.html')
 
 
 def acc(request):
@@ -68,7 +68,7 @@ def video_cam(request):
 #     camera = cv2.VideoCapture(0)
 #     while True :
 #         ret_cam, image = camera.read()
-#         return image
+#         return image 
 
 #Method for phone camera
 def webcam_feed(request):
